@@ -13,6 +13,7 @@ struct stats
 };
 
 stats insertion(std::vector<int>& arr){
+    //cout<<"In insert"<<endl;
     size_t n=arr.size();
     stats statics;
     for (size_t i=1; i<n; ++i){
@@ -28,83 +29,86 @@ stats insertion(std::vector<int>& arr){
     return statics;
 }
 
-stats qsort(std::vector<int>& arr, size_t size){
-    stats statics;
-    size_t i=0;
-    size_t j=size-1;
-    size_t mid=arr[size/2];
-    while(i<=j){
-        while(arr[i]<mid){
-            statics.comparison_count++;
-            ++i;
+void quick_sort(std::vector<int>& arr, int left, int right, stats& s) {
+    int i = left, j = right;
+    int main = arr[left];
+    while (i <= j) {
+        while (arr[i] < main) {
+            s.comparison_count++;
+            i++;
         }
-        while(arr[j]>mid){
-            statics.comparison_count++;
-            --j;
+        while (arr[j] > main) {
+            s.comparison_count++;
+            j--;
         }
-        if (i<j){
-            int tmp=arr[i];
-            arr[i]=arr[j];
-            arr[j]=tmp;
-            ++i;
-            ++j;
-            statics.copy_count++;
+        if (i <= j) {
+            swap(arr[i], arr[j]);
+            i++;
+            j--;
+
+            s.copy_count += 1;
         }
-    } 
-    if (j>0){
-        qsort(arr,j+1);
     }
-    if (i<size){
-        qsort(arr,size-1);
-    }
-    return statics;
+
+    if (left < j)
+        quick_sort(arr, left, j, s);
+    if (i < right)
+        quick_sort(arr, i, right, s);
 }
 
-stats merge(std::vector<int>& arr, std::vector<int>& left, std::vector<int>& right, stats& statistics){
+stats quick_sort(std::vector<int>& arr, int size) {
+    stats statistics;
+    if (size<2){
+        return statistics;
+    }
+    quick_sort(arr, 0, size - 1, statistics);
+    return statistics;
+}
+
+stats merge(std::vector<int>& arr, std::vector<int>& left, std::vector<int>& right, stats& statistics) {
     size_t left_size = left.size();
     size_t right_size = right.size();
     size_t i = 0, j = 0, k = 0;
     while (i < left_size && j < right_size) {
         statistics.comparison_count++;
         if (left[i] <= right[j]) {
-            ++k;
-            ++i;
             arr[k] = left[i];
+            ++i;
         } else {
-            ++k;
-            ++j;
             arr[k] = right[j];
+            ++j;
         }
         statistics.copy_count++;
+        ++k;
     }
     while (i < left_size) {
-        ++k;
-        ++i;
         arr[k] = left[i];
+        ++i;
         statistics.copy_count++;
+        ++k;
     }
 
     while (j < right_size) {
-        ++k;
-        ++j;
         arr[k] = right[j];
+        ++j;
         statistics.copy_count++;
+        ++k;
     }
     return statistics;
 }
 
-stats merge_sort(std::vector<int>& arr){
-    size_t size=arr.size();
+stats merge_sort(std::vector<int>& arr) {
+    size_t size = arr.size();
     stats statistics;
-    if(size<=1){
+    if (size < 2) {
         return statistics;
     }
-    size_t mid=size/2;
-    std::vector<int> left(arr.begin(),arr.begin()+mid);
-    std::vector<int> right(arr.begin()+mid,arr.end());
-    statistics=merge_sort(left);
-    statistics=merge_sort(right);
-    merge(arr,left,right,statistics);
+    size_t mid = size / 2;
+    std::vector<int> left(arr.begin(), arr.begin() + mid);
+    std::vector<int> right(arr.begin() + mid, arr.end());
+    statistics = merge_sort(left);
+    statistics = merge_sort(right);
+    merge(arr, left, right, statistics);
     return statistics;
 }
 
