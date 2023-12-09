@@ -1,0 +1,335 @@
+Insertion sort
+Insertion for 100 arrays
+Size : 1000
+Avg comparision: 248341
+Avg copy: 248341
+Comparision: 999
+Copy: 0
+Comparision: 499500
+Copy: 499500
+Quick sort
+Quick for 100 arrays
+Size : 1000
+Avg comparision: 13018
+Avg copy: 13018
+Comparision: 7987
+Copy: 511
+Comparision: 8306
+Copy: 4178
+Merge sort
+Merge for 100 arrays
+Size : 1000
+Avg comparision: 1978
+Avg copy: 1978
+Comparision: 999
+Copy: 2000
+
+Insertion sort
+Insertion for 100 arrays
+Size : 2000
+Avg comparision: 991251
+Avg copy: 991251
+Comparision: 1999
+Copy: 0
+Comparision: 1999000
+Copy: 1999000
+Quick sort
+Quick for 100 arrays
+Size : 2000
+Avg comparision: 36411
+Avg copy: 36411
+Comparision: 17964
+Copy: 1023
+Comparision: 18714
+Copy: 9310
+Merge sort
+Merge for 100 arrays
+Size : 2000
+Avg comparision: 3968
+Avg copy: 3968
+Comparision: 1999
+Copy: 4000
+Comparision: 2001
+Copy: 4000
+
+Insertion sort
+Insertion for 100 arrays
+Size : 3000
+Avg comparision: 2228028
+Avg copy: 2228028
+Comparision: 2999
+Copy: 0
+Comparision: 4498500
+Copy: 4498500
+Quick sort
+Quick for 100 arrays
+Size : 3000
+Avg comparision: 70020
+Avg copy: 70020
+Comparision: 28917
+Copy: 1976
+Comparision: 30099
+Copy: 14772
+Merge sort
+Merge for 100 arrays
+Size : 3000
+Avg comparision: 5959
+Avg copy: 5959
+Comparision: 2999
+Copy: 6001
+Comparision: 3002
+Copy: 6001
+
+Insertion sort
+Insertion for 100 arrays
+Size : 4000
+Avg comparision: 3962187
+Avg copy: 3962187
+Comparision: 3999
+Copy: 0
+Comparision: 7998000
+Copy: 7998000
+Quick sort
+Quick for 100 arrays
+Size : 4000
+Avg comparision: 112733
+Avg copy: 112733
+Comparision: 39917
+Copy: 2047
+Comparision: 41525
+Copy: 20571
+Merge sort
+Merge for 100 arrays
+Size : 4000
+Avg comparision: 7949
+Avg copy: 7949
+Comparision: 3999
+Copy: 8000
+Comparision: 4001
+Copy: 8000
+
+Insertion sort
+Insertion for 100 arrays
+Size : 5000
+Avg comparision: 6193895
+Avg copy: 6193895
+Comparision: 4999
+Copy: 0
+Comparision: 12497500
+Copy: 12497500
+Quick sort
+Quick for 100 arrays
+Size : 5000
+Avg comparision: 166896
+Avg copy: 166896
+Comparision: 51822
+Copy: 2952
+Comparision: 53556
+Copy: 26543
+Merge sort
+Merge for 100 arrays
+Size : 5000
+Avg comparision: 9940
+Avg copy: 9940
+Comparision: 4999
+Copy: 10004
+Comparision: 5005
+Copy: 10004
+
+Insertion sort
+Insertion for 100 arrays
+Size : 6000
+Avg comparision: 8913016
+Avg copy: 8913016
+Comparision: 5999
+Copy: 0
+Comparision: 17997000
+Copy: 17997000
+Quick sort
+Quick for 100 arrays
+Size : 6000
+Avg comparision: 230230
+Avg copy: 230230
+Comparision: 63822
+Copy: 3952
+Comparision: 66250
+Copy: 32491
+Merge sort
+Merge for 100 arrays
+Size : 6000
+Avg comparision: 11927
+Avg copy: 11927
+Comparision: 5999
+Copy: 12001
+Comparision: 6002
+Copy: 12001
+
+Insertion sort
+Insertion for 100 arrays
+Size : 7000
+Avg comparision: 12124037
+Avg copy: 12124037
+Comparision: 6999
+Copy: 0
+Comparision: 24496500
+Copy: 24496500
+Quick sort
+Quick for 100 arrays
+Size : 7000
+Avg comparision: 302727
+Avg copy: 302727
+Comparision: 75822
+Copy: 4095
+Comparision: 78321
+Copy: 38782
+Merge sort
+Merge for 100 arrays
+Size : 7000
+Avg comparision: 13917
+Avg copy: 13917
+Comparision: 6999
+Copy: 14002
+Comparision: 7003
+Copy: 14002
+
+
+Insertion sort
+Insertion for 100 arrays
+Size : 8000
+Avg comparision: 15847349
+Avg copy: 15847349
+Comparision: 7999
+Copy: 0
+Comparision: 31996000
+Copy: 31996000
+Quick sort
+Quick for 100 arrays
+Size : 8000
+Avg comparision: 387027
+Avg copy: 387027
+Comparision: 87822
+Copy: 4095
+Comparision: 91087
+Copy: 45101
+Merge sort
+Merge for 100 arrays
+Size : 8000
+Avg comparision: 15905
+Avg copy: 15905
+Comparision: 7999
+Copy: 16000
+Comparision: 8001
+Copy: 16000
+
+
+Insertion sort
+Insertion for 100 arrays
+Size : 9000
+Avg comparision: 20060268
+Avg copy: 20060268
+Comparision: 8999
+Copy: 0
+Comparision: 40495500
+Copy: 40495500
+Quick sort
+Quick for 100 arrays
+Size : 9000
+Avg comparision: 479665
+Avg copy: 479665
+Comparision: 100631
+Copy: 4904
+Comparision: 103956
+Copy: 51683
+Merge sort
+Merge for 100 arrays
+Size : 9000
+Avg comparision: 17902
+Avg copy: 17902
+Comparision: 8999
+Copy: 18005
+Comparision: 9006
+Copy: 18005
+
+Insertion sort
+Insertion for 100 arrays
+Size : 10000
+Avg comparision: 24779963
+Avg copy: 24779963
+Comparision: 9999
+Copy: 0
+Comparision: 49995000
+Copy: 49995000
+Quick sort
+Quick for 100 arrays
+Size : 10000
+Avg comparision: 582577
+Avg copy: 582577
+Comparision: 113631
+Copy: 5904
+Comparision: 117226
+Copy: 57986
+Merge sort
+Merge for 100 arrays
+Size : 10000
+Avg comparision: 19892
+Avg copy: 19892
+Comparision: 9999
+Copy: 20004
+Comparision: 10005
+Copy: 20004
+
+Insertion sort
+Insertion for 100 arrays
+Size : 25000
+Avg comparision: 154649185
+Avg copy: 154649185
+Comparision: 24999
+Copy: 0
+Comparision: 312487500
+Copy: 312487500
+Quick sort
+Quick for 100 arrays
+Size : 25000
+Avg comparision: 3335328
+Avg copy: 3335328
+Comparision: 317248
+Copy: 16383
+Comparision: 327286
+Copy: 160992
+Merge sort
+Merge for 100 arrays
+Size : 25000
+Avg comparision: 49743
+Avg copy: 49743
+Comparision: 24999
+Copy: 50005
+Comparision: 25006
+Copy: 50005
+
+Insertion sort
+Insertion for 100 arrays
+Size : 50000
+Avg comparision: 618880684
+Avg copy: 618880684
+Comparision: 49999
+Copy: 0
+Comparision: 1249975000
+Copy: 1249975000
+Quick sort
+Quick for 100 arrays
+Size : 50000
+Avg comparision: 12917209
+Avg copy: 12917209
+Comparision: 684481
+Copy: 32767
+Comparision: 705034
+Copy: 346701
+Merge sort
+Merge for 100 arrays
+Size : 50000
+Avg comparision: 99493
+Avg copy: 99493
+Comparision: 49999
+Copy: 100005
+Comparision: 50006
+Copy: 100005

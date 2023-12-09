@@ -131,7 +131,7 @@ stats merge_sort(std::vector<int> &arr)
     return statistics;
 }
 
-std::vector<int> vector(int size)
+std::vector<int> normal_vector(int size)
 {
     std::vector<int> arr;
     for (int i = 0; i < size; ++i)

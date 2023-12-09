@@ -1,4 +1,5 @@
 #include "sorts.cpp"
+#define SIZE 50000
 
 using namespace std;
 
@@ -51,4 +52,82 @@ int main(){
     }
     cout<<"Comparision count: "<<s5.comparison_count<<endl;
     cout<<"Copy count: "<<s5.copy_count<<endl;
+
+    //Insertion 
+    {
+        cout<<"Insertion sort"<<endl;
+        size_t comparision=0,copy=0;
+        cout<<"Insertion for 100 arrays"<<endl;
+        cout<<"Size : "<<SIZE<<endl;
+        for (int i=0;i<100;++i){
+            std::vector<int> arr=random_vector(SIZE);
+            stats s=insertion(arr.begin(),arr.end());
+            comparision+=s.comparison_count;
+            copy+=s.copy_count;
+        }
+        cout<<"Avg comparision: "<<comparision/100<<endl;
+        cout<<"Avg copy: "<<comparision/100<<endl;
+
+        std::vector<int> arr1=normal_vector(SIZE);
+        stats s1=insertion(arr1.begin(),arr1.end());
+        cout<<"Comparision: "<<s1.comparison_count<<endl;
+        cout<<"Copy: "<<s1.copy_count<<endl;
+
+        std::vector<int> arr2=reverse_vector(SIZE);
+        stats s2=insertion(arr2.begin(),arr2.end());
+        cout<<"Comparision: "<<s2.comparison_count<<endl;
+        cout<<"Copy: "<<s2.copy_count<<endl;
+    }
+
+    //Quick
+    {
+        cout<<"Quick sort"<<endl;
+        size_t comparision=0,copy=0;
+        cout<<"Quick for 100 arrays"<<endl;
+        cout<<"Size : "<<SIZE<<endl;
+        for (int i=0;i<100;++i){
+            std::vector<int> arr=random_vector(SIZE);
+            stats s=quick_sort(arr.begin(),arr.end());
+            comparision+=s.comparison_count;
+            copy+=s.copy_count;
+        }
+        cout<<"Avg comparision: "<<comparision/100<<endl;
+        cout<<"Avg copy: "<<comparision/100<<endl;
+
+        std::vector<int> arr1=normal_vector(SIZE);
+        stats s1=quick_sort(arr1.begin(),arr1.end());
+        cout<<"Comparision: "<<s1.comparison_count<<endl;
+        cout<<"Copy: "<<s1.copy_count<<endl;
+
+        std::vector<int> arr2=reverse_vector(SIZE);
+        stats s2=quick_sort(arr2.begin(),arr2.end());
+        cout<<"Comparision: "<<s2.comparison_count<<endl;
+        cout<<"Copy: "<<s2.copy_count<<endl;
+    }
+
+    //Merge
+    {
+        cout<<"Merge sort"<<endl;
+        size_t comparision=0,copy=0;
+        cout<<"Merge for 100 arrays"<<endl;
+        cout<<"Size : "<<SIZE<<endl;
+        for (int i=0;i<100;++i){
+            std::vector<int> arr=random_vector(SIZE);
+            stats s=merge_sort(arr);
+            comparision+=s.comparison_count;
+            copy+=s.copy_count;
+        }
+        cout<<"Avg comparision: "<<comparision/100<<endl;
+        cout<<"Avg copy: "<<comparision/100<<endl;
+
+        std::vector<int> arr1=normal_vector(SIZE);
+        stats s1=merge_sort(arr1);
+        cout<<"Comparision: "<<s1.comparison_count<<endl;
+        cout<<"Copy: "<<s1.copy_count<<endl;
+
+        std::vector<int> arr2=reverse_vector(SIZE);
+        stats s2=merge_sort(arr2);
+        cout<<"Comparision: "<<s2.comparison_count<<endl;
+        cout<<"Copy: "<<s2.copy_count<<endl;
+    }
 }
