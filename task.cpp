@@ -1,5 +1,5 @@
 #include "sorts.cpp"
-#define SIZE 50000
+#define SIZE 1000
 
 using namespace std;
 
@@ -66,7 +66,7 @@ int main(){
             copy+=s.copy_count;
         }
         cout<<"Avg comparision: "<<comparision/100<<endl;
-        cout<<"Avg copy: "<<comparision/100<<endl;
+        cout<<"Avg copy: "<<copy/100<<endl;
 
         std::vector<int> arr1=normal_vector(SIZE);
         stats s1=insertion(arr1.begin(),arr1.end());
@@ -92,7 +92,7 @@ int main(){
             copy+=s.copy_count;
         }
         cout<<"Avg comparision: "<<comparision/100<<endl;
-        cout<<"Avg copy: "<<comparision/100<<endl;
+        cout<<"Avg copy: "<<copy/100<<endl;
 
         std::vector<int> arr1=normal_vector(SIZE);
         stats s1=quick_sort(arr1.begin(),arr1.end());
@@ -118,7 +118,7 @@ int main(){
             copy+=s.copy_count;
         }
         cout<<"Avg comparision: "<<comparision/100<<endl;
-        cout<<"Avg copy: "<<comparision/100<<endl;
+        cout<<"Avg copy: "<<copy/100<<endl;
 
         std::vector<int> arr1=normal_vector(SIZE);
         stats s1=merge_sort(arr1);

@@ -333,3 +333,31 @@ Comparision: 49999
 Copy: 100005
 Comparision: 50006
 Copy: 100005
+
+Insertion sort
+Insertion for 100 arrays
+Size : 100000
+Avg comparision: 2474903171
+Avg copy: 2474903171
+Comparision: 99999
+Copy: 0
+Comparision: 4999950000
+Copy: 4999950000
+Quick sort
+Quick for 100 arrays
+Size : 100000
+Avg comparision: 50836616
+Avg copy: 50836616
+Comparision: 1468946
+Copy: 65535
+Comparision: 1510627
+Copy: 743061
+Merge sort
+Merge for 100 arrays
+Size : 100000
+Avg comparision: 198991
+Avg copy: 198991
+Comparision: 99999
+Copy: 200005
+Comparision: 100006
+Copy: 200005
